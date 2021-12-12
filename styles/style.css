@@ -1,3 +1,12 @@
+/*jeder Text jeder Seite*/
+
+.site-main
+{
+    font-style: sans-serif;
+}
+
+/*Navigationsleiste*/
+
 .index-nav-list
 {
     border: 2px solid gray;
@@ -31,6 +40,8 @@
     margin-bottom: 32px;
 }
 
+/*wenn das Browserfenster kleiner als 600px wird*/
+
 @media only screen and (max-width: 600px) 
 {
     .index-nav-list
@@ -38,6 +49,8 @@
         flex-flow: column wrap;
     }
 }
+
+/*Menü*/
 
 .index-intro-text
 {
@@ -61,6 +74,8 @@
     border-radius: 5px;  
 }
 
+/*wenn das Browserfenster kleiner als 600px wird*/
+
 @media only screen and (max-width: 600px) 
 {
     .index-image
@@ -73,6 +88,9 @@
         width: 300px;  
     }
 }
+
+/*wenn das Browserfenster größer als 600px wird*/
+
 @media not screen and (max-width: 600px) 
 {
     .image-text
@@ -166,6 +184,8 @@
     color:rgb(49, 49, 49);
 }
 
+/*wenn das Browserfenster größer als 600px wird*/
+
 @media not screen and (max-width: 600px) 
 {
     .intro-text-boxes
@@ -185,6 +205,8 @@
         margin-right: 50px;
     }
 }
+
+/*wenn das Browserfenster kleiner als 600px wird*/
 
 @media only screen and (max-width: 600px) 
 {
@@ -210,4 +232,212 @@
     border: 2px solid gray;
     border-radius: 5px;
     padding: 10px;
+}
+
+/* Zeitleiste*/
+
+.timeline
+{
+    display:flex;
+    justify-content: center;
+}
+
+.timeline-list
+{
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.timeline-link-left
+{
+    transform: translate(-120px, 0);
+}
+
+.timeline-link-right
+{
+     transform: translate(135px, 0)
+}
+
+#timeline-link
+{
+    background: gray;
+    width: 9em;
+    min-height: 5em;
+    padding: 10px;
+    word-wrap: break-word;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.timeline-headline
+{
+    color: blue;
+}
+
+/*wenn das Browserfenster kleiner als 600px wird*/
+
+@media only screen and (max-width: 600px) 
+{
+    .timeline
+    {
+        display:flex;
+        justify-content: center;
+    }
+
+    .timeline-list
+    {
+        padding: 0px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+
+    #timeline-link
+    {
+        display: visible;
+        animation-duration: 1s;
+        animation-name: timeline;
+        margin-bottom: 0px;
+    }
+
+    @keyframes timeline
+    {
+        from{transform: translate(100px, 0)}
+        to{transform: translate(0px, 0)}
+    }
+
+    @keyframes line
+    {
+        from{transform: translate(170px, 0)}
+        to{transform: translate(4.4em, 0)}
+    }
+
+    .timeline-link-left
+    {
+        transform: translate(0px, 0);
+    }
+
+    .timeline-link-right
+    {
+        transform: translate(0px, 0)
+    }
+
+    .line
+    {
+        animation-duration: 1s;
+        animation-name: line;
+        border: 2px solid black;
+        width: 10px;
+        height: 50px;
+        transform: translate(4.4em, 0);
+        background: gray;
+    }
+}
+
+/*wenn das Browserfenster größer als 600px wird*/
+
+@media not screen and (max-width: 600px) 
+{
+    .timeline-link-left
+    {
+        display: visible;
+        animation-duration: 1s;
+        animation-name: timeline-link-left-animation;
+    }
+    .timeline-link-right
+    {
+        display: visible;
+        animation-duration: 1s;
+        animation-name: timeline-link-right-animation;
+    }
+
+    @keyframes timeline-link-left-animation
+    {
+        from{transform: translate(-200px, 0)}
+        to{transform: translate(-120px, 0)}
+    }
+
+    @keyframes timeline-link-right-animation
+    {
+        from{transform: translate(200px, 0)}
+        to{transform: translate(135px, 0)}
+    }
+    
+    .long-line
+    {
+        display: flex;
+        position: absolute;
+        border: 2px solid black;
+        width: 10px;
+        height: 93em;
+        left: 50%;
+        background: gray;
+    }
+}
+
+/*Überblick*/
+
+.overview-image
+{
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    width: 300px;
+    min-width: 350px;
+    height: auto;
+    max-height: 210px;
+    border: 2px solid gray;
+    border-radius: 5px;  
+}
+
+.caption
+{
+    visibility: hidden;
+    position: absolute;
+    margin-left: 50px;
+    transform: translate(-350px, 220px);
+}
+
+/*wenn das Browserfenster kleiner als 600px wird*/
+
+@media only screen and (max-width: 600px) 
+{
+    .overview-image
+    {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        width: 300px;  
+    }
+    .caption
+    {
+        visibility: visible;
+        position: relative;
+        transform: translate(0, 0);
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+/*Syntax*/
+
+.examples-intro
+{
+    margin: 0 auto;
+    max-width: 30em;
+    word-wrap: break-word;
+    font-size: 20px;
+    margin-bottom: 32px;
+    text-align: justify;
 }
