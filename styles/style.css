@@ -107,6 +107,11 @@
     background: rgb(49, 49, 49);
 }
 
+#colored
+{
+    color:gray;
+}
+
 .html-image
 {
     display: block;
