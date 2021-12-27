@@ -22,6 +22,25 @@
     margin-bottom: 10px;
 }
 
+.nav-link
+{
+    display: block;
+    text-decoration: none;
+    background: rgb(61, 61, 61);
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover
+{
+    background: gray;
+}
+
+.nav-link:focus
+{
+    background: rgb(49, 49, 49);
+}
+
 .index-header 
 {
     text-align: center;
@@ -107,25 +126,6 @@
 {
     overflow: auto;
     clear: both;
-}
-
-.nav-link
-{
-    display: block;
-    text-decoration: none;
-    background: rgb(61, 61, 61);
-    color: white;
-    padding: 0.5rem 1rem;
-}
-
-.nav-link:hover
-{
-    background: gray;
-}
-
-.nav-link:focus
-{
-    background: rgb(49, 49, 49);
 }
 
 #colored
