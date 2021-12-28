@@ -1,8 +1,9 @@
 /*jeder Text jeder Seite*/
 
-.site-main
+*
 {
     font-style: sans-serif;
+    font-family: "Arial";
 }
 
 /*Navigationsleiste*/
@@ -460,4 +461,9 @@
     word-wrap: break-word;
     font-size: 20px;
     margin-bottom: 32px;
+}
+
+.syntax-introduction
+{
+    font-family: cursive;
 }
