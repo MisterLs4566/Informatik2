@@ -2,6 +2,7 @@
     <head>
         <title>Syntax</title>
         <link rel="stylesheet" href="../styles/style.css">
+        <script src="../scripts/syntax.js"></script>
         <link rel="icon" href="../icons/icon.png">
         <link rel="apple-touch-icon" href="../icons/ios-icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +24,7 @@
             <div class="syntax-intro">
                 Auf dieser Seite wird die Syntax der verschiedenen Programmiersprachen gezeigt. Dafür schauen wir uns den Code einer einfachen "<b>Hello World</b>" Ausgabe an. in manchen Beispielen wird auch eine Variable oder eine if Abfrage verwendet, um Besonderheiten der Programmiersprache zu verdeutlichen.
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="basic()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="basic">BASIC</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
@@ -31,7 +32,7 @@
                 </div>
                 <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="pascal()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="pascal">Pascal</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
@@ -39,7 +40,7 @@
                 </div>
                 <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="c()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="c">C</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
@@ -47,7 +48,7 @@
                 </div>
                 <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="cpp()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="c++">C++</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
@@ -55,7 +56,7 @@
                 </div>
                 <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="python()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="python">Python</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
@@ -63,7 +64,7 @@
                 </div>
                 <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="java()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="java">Java</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
@@ -71,7 +72,7 @@
                 </div>
                 <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="javascript()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="javascript">JavaScript</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
@@ -79,7 +80,7 @@
                 </div>
                 <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
             </div>
-            <div class="syntax-language" title="Infos anzeigen">
+            <div class="syntax-language" onclick="php()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="php">PHP</h2>
                 <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
                 <div class="syntax">
