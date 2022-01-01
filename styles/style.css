@@ -245,6 +245,22 @@
     padding: 10px;
 }
 
+.footer-infos
+{
+    margin-bottom: 8px;
+}
+
+.link-source
+{
+    font-size: 16px;
+    color: lightblue;
+}
+
+.link-source:hover
+{
+    color: white;
+}
+
 /* Zeitleiste*/
 
 .timeline
@@ -449,10 +465,10 @@
 
 /*Syntax*/
 
-.examples-intro
+.syntax-intro
 {
     margin: 0 auto;
-    max-width: 30em;
+    max-width: 40em;
     word-wrap: break-word;
     font-size: 20px;
     margin-bottom: 32px;
@@ -461,10 +477,42 @@
     text-align: justify;
 }
 
+.syntax-language
+{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    position: relative;
+    max-width: 40em;
+    padding: 5px;
+}
+
+.syntax-language:hover
+{
+    cursor: hand;
+}
+
+.syntax-subheader
+{
+    text-align: center;
+    text-decoration: underline;
+    color: turquoise;
+}
+
 .syntax-introduction
 {
+    font-size: 20px;
+    word-wrap: break-word;
+    max-width: 40em;
     font-style: italic;
     margin-bottom: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .syntax
@@ -472,10 +520,21 @@
     border: 2px solid gray;
     border-radius: 5px;
     padding: 10px;
-    background-color: rgba(0, 255, 229, 0.411);
+    background-color: darkgray;
+    color: rgb(0, 0, 153);
     word-wrap: break-word;
+    max-width: 40em;
     font-size: 20px;
-    margin-bottom: 32px;
     margin-right: 8px;
     margin-left: 8px;
+}
+
+.small
+{
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-size: 16px;
+    font-style: italic;
 }
