@@ -237,6 +237,7 @@
 {
     font-size: 16;;
     margin: auto;
+    margin-bottom: 8px;
     background: rgb(49, 49, 49);
     color: white;
     border: 2px solid gray;
@@ -456,6 +457,14 @@
     font-size: 20px;
     margin-bottom: 32px;
     text-align: justify;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.syntax-introduction
+{
+    font-style: italic;
+    margin-bottom: 16px;
 }
 
 .syntax
@@ -467,9 +476,6 @@
     word-wrap: break-word;
     font-size: 20px;
     margin-bottom: 32px;
-}
-
-.syntax-introduction
-{
-    font-family: cursive;
+    margin-right: 8px;
+    margin-left: 8px;
 }
