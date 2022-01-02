@@ -247,16 +247,16 @@
 
 .footer-infos
 {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
-.link-source
+.index-source-link
 {
     font-size: 16px;
     color: lightblue;
 }
 
-.link-source:hover
+.index-source-link:hover
 {
     color: white;
 }
@@ -473,8 +473,6 @@
     font-size: 20px;
     margin-bottom: 32px;
     text-align: justify;
-    word-wrap: break-word;
-    text-align: justify;
 }
 
 .syntax-language
@@ -537,4 +535,25 @@
     margin-top: 16px;
     font-size: 16px;
     font-style: italic;
+}
+
+/*Quellen*/
+
+.source-links
+{
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    flex-direction: column;
+}
+
+.source-link
+{
+    word-wrap: break-word;
+    max-width: 30em;
+    font-size: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 16px;
 }
