@@ -74,6 +74,7 @@
 
 .index-intro-text
 {
+    text-align: justify;
     margin-right: 8px;
     font-size: 20px;
     word-wrap: break-word;
@@ -147,11 +148,11 @@
 
 .intro-next-years-text
 {
-    text-align: justify;
+    text-align: justify; 
     margin: 0 auto;
     font-size: 20px;
     margin-bottom: 32px;
-    max-width: 40em;
+    max-width: 37em;
 }
 
 .intro-text-boxes
@@ -258,7 +259,7 @@
 
 .index-source-link:hover
 {
-    color: white;
+    color: gray;
 }
 
 /* Zeitleiste*/
@@ -411,7 +412,7 @@
     }
 }
 
-/*Überblick*/
+/*Übersicht*/
 
 .overview-image
 {
@@ -467,12 +468,11 @@
 
 .syntax-intro
 {
+    text-align: justify;
     margin: 0 auto;
-    max-width: 40em;
-    word-wrap: break-word;
     font-size: 20px;
     margin-bottom: 32px;
-    text-align: justify;
+    max-width: 35em;
 }
 
 .syntax-language
@@ -493,6 +493,24 @@
 .syntax-language:hover
 {
     cursor: hand;
+}
+
+/*wenn das Browserfenster kleiner als 600px wird*/
+
+@media only screen and (max-width: 600px) 
+{
+    .syntax-intro
+    {
+        max-width: 30em;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .syntax-language
+    {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
 }
 
 .syntax-subheader
