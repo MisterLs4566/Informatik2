@@ -22,7 +22,7 @@
         </header>
         <main class="site-main">
             <div class="syntax-intro">
-                Auf dieser Seite wird die Syntax der verschiedenen Programmiersprachen gezeigt. Dafür schauen wir uns den Code einer einfachen "<b>Hello World</b>" Ausgabe an. in manchen Beispielen wird auch eine Variable oder eine if Abfrage verwendet, um Besonderheiten der Programmiersprache zu verdeutlichen.
+                Auf dieser Seite wird die Syntax der verschiedenen Programmiersprachen gezeigt. Dafür schauen wir uns den Code einer einfachen "<b>Hello World</b>" Ausgabe an. in manchen Beispielen wird auch eine Variable, eine if Abfrage oder auch eine For-Schleife verwendet, um Besonderheiten der Programmiersprache zu verdeutlichen.
             </div>
             <div class="syntax-language" onclick="basic()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="basic">BASIC</h2>
@@ -34,59 +34,120 @@
             </div>
             <div class="syntax-language" onclick="pascal()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="pascal">Pascal</h2>
-                <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
+                <div class="syntax-introduction">In Pascal sieht eine Hello World Ausgabe so aus:</div>
                 <div class="syntax">
-                    10 PRINT "Hello World"
+                    program HelloWorld;<br>
+                    begin<br>
+                    &emsp;writeLn("Hello World");<br>     
+                    end.
                 </div>
-                <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
+                <div class="small">In Pascal muss man zuerst einen Programmnamen definieren. Der Code, der in der "begin" - Methode steht, wird vom Compiler zuerst ausgeführt. Am Ende des Programm muss man es mit der "end." - Methode abschließen. Das Semikolon am Ende trennt die Zeilen und Befehle voneinander.</div> 
             </div>
             <div class="syntax-language" onclick="c()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="c">C</h2>
-                <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
+                <div class="syntax-introduction">in C sieht eine Hello World Ausgabe so aus:</div>
                 <div class="syntax">
-                    10 PRINT "Hello World"
+                    #include &lt;stdio.h&gt;<br>
+                    int main()<br>
+                    {<br>
+                    &emsp;printf("Hello World");<br> 
+                    } 
                 </div>
-                <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
+                <div class="small">In C muss um eine Konsolenausgabe zu erzeugen erst eine Bibliothek importiert werden. Eine Bibliothek ist nichts anderes, als Code, der bereitgestellt wird, um bestimmte Prozesse zu vereinfachen.stdio.h ist eine Standardbibliothek von C, die genau das ermöglicht. Mithilfe von "#include", können in C Bibliotheken importiert werden. Wie in Pascal muss auch in C zuerst eine Routine erzeugt werden, die vom Compiler gefunden und ausgeführt wird. Die main Funktion spiegelt in C immmer den Code wieder, der tatsächlich ausgeführt wird. printf ist der Befehl, um dann die Ausgabe zu erzeugen.</div> 
             </div>
             <div class="syntax-language" onclick="cpp()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="c++">C++</h2>
-                <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
+                <div class="syntax-introduction">Das ist die Hello World Ausgabe in C++:</div>
                 <div class="syntax">
-                    10 PRINT "Hello World"
+                    #include &lt;iostream&gt;<br>
+                    int main()<br>
+                    {<br>
+                    &emsp;std::cout  &lt;&lt;"Hello World";<br>
+                    }
                 </div>
-                <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
+                <div class="small">Das Verfahren ist das Gleiche wie in C, man muss auch hier eine Standardbibliothek importieren und eine main-Funktion definieren in welcher man dann den Befehl ausführen kann. Bei "std::" handelt es sich um einen sogenannten Namensraum (eng.: "namespace"), mit dem die Befehle der Bibliothek iostream ausgeführt werden. Alternativ kann man die Ausgabe auch so erzeugen: </div>
+                <div class="syntax">
+                    #include &lt;iostream&gt;<br>
+                    int main()<br>
+                    {<br>
+                    &emsp;using namespace std;<br>
+                    &emsp;cout  &lt;&lt;"Hello World";<br>
+                    }
+                </div> 
+                <div class="small">in diesem Fall wird definiert, dass das namespace direkt verwendet wird. Dadurch braucht man "std::" vor dem Befehl nicht, um diesen auszuführen.</div>
             </div>
             <div class="syntax-language" onclick="python()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="python">Python</h2>
-                <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
+                <div class="syntax-introduction">Um eine Hello World Ausgabe zu erzeugen braucht man in Python diesen Code:</div>
                 <div class="syntax">
-                    10 PRINT "Hello World"
+                    print("Hello World")
                 </div>
-                <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
+                <div class="small">In Python braucht man keine Bibliothek importieren, um eine Ausgabe zu erzeugen. Außerdem benötigt der Python Interpreter auch keine main Funktion, um den Code auszuführen. In Python werden zusätzlich auch keine Semikola verwendet, um einen Befehl abzuschließen. Hier ist ein weiteres Beispiel für Python Code:</div> 
+                <div class="syntax">
+                    #Das ist ein Beispiel<br>
+                    wert1 = 10<br>
+                    wert2 = 20<br>
+                    if wert &lt; wert2:<br>
+                    &emsp;print(wert1+wert2)
+                </div>
+                <div class="small">
+                    Anders als in anderen Sprachen wird hier ein Doppelpunkt und eine Einrückung verwendet um kennzuzeichnen, dass der Code Teil einer Routine ist.
+                </div>
             </div>
             <div class="syntax-language" onclick="java()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="java">Java</h2>
-                <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
+                <div class="syntax-introduction">In Java kann man eine Hello World Ausgabe so erzeugen:</div>
                 <div class="syntax">
-                    10 PRINT "Hello World"
+                    public class dateiname<br>
+                    {<br>
+                    &emsp;public static void main(String[] args)<br>
+                    &emsp;{<br>
+                    &emsp;&emsp;System.out.println("Hello World");<br>
+                    &emsp;}<br>
+                    }
                 </div>
-                <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
+                <div class="small">In Java muss zurerst eine Klasse definiert werden, die den gleichen Namen wie die Datei hat. die main Methode wird vom Compiler ausgeführt. der println Befehl sorgt für eine Konsolenausgabe. Java hat eine "strenge" Syntax, um etwas ztu definieren muss anders als in Python der Datentyp (ganze Zahl, Dezimalzahl, Zeichenkette) immer mit angegeben werden. Hier ist ein weiteres Beispiel für Java Code:</div> 
+                <div class="syntax">
+                    public class dateiname<br>
+                    {<br>
+                    &emsp;public static void main(String[] args)<br>
+                    &emsp;{<br>
+                    &emsp;&emsp;//Das ist ein Beispiel<br><br>
+                    &emsp;&emsp;int[] liste = new int[100];<br><br>
+                    &emsp;&emsp;for(int x=0; x&lt;100; x++)<br>
+                    &emsp;&emsp;{<br>
+                    &emsp;&emsp;&emsp;liste[x]=x;<br>
+                    &emsp;&emsp;}<br><br>
+                    &emsp;&emsp;for(int x=0; x&lt;100; x++)<br>
+                    &emsp;&emsp;{<br>
+                    &emsp;&emsp;&emsp;System.out.println(liste[x]);<br>
+                    &emsp;&emsp;}<br>
+                    &emsp;}<br>
+                    }
+                </div>
+                <div class="small">
+                    Dieser Code erstellt ein Array (ähnlich wie eine Liste und kann mehrere Werte speichern) mit 100 möglichen Werten, die alle aus ganzen Zahlen bestehen müssen (dafür sorgen die Zahl 100 in den Klammern und der Ausdruck: "int"). Dann wird der Liste 99 Mal eine Zahl zugeordnet. Anschließend wird das Array dann ausgegeben.
+                </div>
             </div>
             <div class="syntax-language" onclick="javascript()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="javascript">JavaScript</h2>
-                <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
+                <div class="syntax-introduction">In JavaScript sieht eine hello World Ausgabe so aus:</div>
                 <div class="syntax">
-                    10 PRINT "Hello World"
+                    alert("Hello World");
                 </div>
-                <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
+                <div class="small">Anders als bei anderen Sprachen wird hier die Ausgabe nicht über eine Konsole getätigt, sondern es öffnet sich (wenn man den JavaScript mit Html verknüpft) ein Ausgabefenster, in dem der Text steht. Eine weitere Möglichkeit, Text auszugeben sieht in JavaScript so aus:</div> 
+                <div class="syntax">
+                    document.write("Hello World");
+                </div>
+                <div class="small">In diesem Fall öffnet sich kein Fenster, sondern der Text wird direkt auf die Html Seite geschrieben.</div> 
             </div>
             <div class="syntax-language" onclick="php()" title="Infos anzeigen">
                 <h2 class="syntax-subheader"  id="php">PHP</h2>
-                <div class="syntax-introduction">In Atari BASIC sieht ein einfacher Hello World Befehl so aus:</div>
+                <div class="syntax-introduction">In PHP kann man eine einfache Ausgabe so ausführen:</div>
                 <div class="syntax">
-                    10 PRINT "Hello World"
+                    print "Hello World";
                 </div>
-                <div class="small">Auffallend ist die Zahl am Anfang der Zeile. Diese ist beliebig auswählbar und zeigt dem Interpreter, in welcher Reihenfolge der Code ausgeführt werden soll. Die Nummerierung ist typisch für BASIC.</div> 
+                <div class="small">Dadurch, dass PHP Html Code an den Browser weitergibt, ist das Ergebnis gleich wie bei document write in JavaScript. Man käme auch zum gleichen Ergebnis, wenn man in ein Html Dokument "Hello World" hineinschreiben würde.</div> 
             </div>
         </main>
         <footer class="index-footer">
