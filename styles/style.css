@@ -122,6 +122,11 @@
         display: flex;
         justify-content: center;
     }
+
+    #last-image
+    {
+        margin-bottom: 64px;
+    }
 }
 
 .clearfix
