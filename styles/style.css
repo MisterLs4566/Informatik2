@@ -6,6 +6,17 @@
     font-family: "Arial";
 }
 
+a
+{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
 /*Navigationsleiste*/
 
 .index-nav-list
@@ -35,6 +46,7 @@
 .nav-link:hover
 {
     background: gray;
+    text-decoration: none;
 }
 
 .nav-link:focus
@@ -265,7 +277,7 @@
 
 .index-source-link:hover
 {
-    color: gray;
+    text-decoration: underline;
 }
 
 /* Zeitleiste*/
@@ -436,6 +448,7 @@
 .overview-image:hover
 {
     cursor: pointer;
+    border: 2px solid black;
 }
 
 .caption
@@ -496,11 +509,6 @@
     padding: 5px;
 }
 
-.syntax-language:hover
-{
-    cursor: hand;
-}
-
 /*wenn das Browserfenster kleiner als 600px wird*/
 
 @media only screen and (max-width: 600px) 
@@ -526,6 +534,11 @@
     color: turquoise;
 }
 
+.syntax-subheader:hover
+{
+    cursor: hand;
+}
+
 .syntax-introduction
 {
     font-size: 20px;
@@ -549,6 +562,11 @@
     font-size: 20px;
     margin-right: 8px;
     margin-left: 8px;
+}
+
+.syntax:hover
+{
+    cursor: auto;
 }
 
 .small
