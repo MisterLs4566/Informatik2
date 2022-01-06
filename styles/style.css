@@ -153,6 +153,7 @@
     font-size: 20px;
     margin-bottom: 32px;
     max-width: 37em;
+    
 }
 
 .intro-text-boxes
@@ -559,19 +560,44 @@
 
 .source-links
 {
-    list-style-type: decimal;
     display: flex;
     justify-content: space-around;
     flex-flow: column wrap;
     flex-direction: column;
+    margin-top: 40px;
+    border: 2px solid gray;
+    margin: 0 auto;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 10px;
 }
 
 .source-link
 {
     word-wrap: break-word;
-    max-width: 30em;
+    max-width: 95%;
     font-size: 20px;
     position: relative;
-    margin: 0 auto;
     margin-bottom: 16px;
+    margin-left: 20px;
 }
+
+/*wenn das Browserfenster größer als 600px wird*/
+
+@media not screen and (max-width: 600px)
+{
+    .source-links
+    {
+        max-width: 600px;
+        padding: 10px;
+        border: 2px solid gray;
+        margin: 0 auto;
+    }
+
+    .source-link
+    {
+        margin-left: 20px;
+        max-width: 100%;
+    }
+
+} 
