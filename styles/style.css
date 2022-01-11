@@ -1,9 +1,15 @@
+@font-face
+{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf")
+}
+
 /*jeder Text jeder Seite*/
 
 *
 {
     font-style: sans-serif;
-    font-family: "Arial";
+    font-family: "Roboto";
 }
 
 a
